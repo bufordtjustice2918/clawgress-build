@@ -34,6 +34,15 @@ Produce reproducible Clawgress images (ISO/OVA/QCOW2/AMI) aligned to MVPv1 (bind
 - Image artifacts in `/home/kavan/.openclaw/vyos/`
 - Branding/attribution checklist
 
+## Estimates
+- **4–7 days** of focused work (one engineer) to get MVPv1‑ready ISO build
+  - Build pipeline stabilization + mirrors/deps: 1–2 days
+  - Wire Clawgress packages + bind9/RPZ defaults: 1–2 days
+  - Branding/attribution cleanup + artifact naming: 0.5–1 day
+  - Validation (boot, RPZ, policy apply, logs): 0.5–1 day
+  - Docs + release workflow: 0.5–1 day
+  - Add 1–2 days buffer for upstream build issues
+
 ## Risks / Dependencies
 - vyos-build changes in `current` branch
 - long build times and resource usage
